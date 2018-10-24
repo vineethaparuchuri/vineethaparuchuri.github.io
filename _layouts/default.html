@@ -1,34 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
   <head>
-    <title>{{ page.title }}</title>
 
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    {% include head.html %}
 
   </head>
-
-
   <body>
-    <nav>
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="/about">About</a></li>
-<li><a href="/cv">CV</a></li>
-<li><a href="/blog">Blog</a></li>
-</ul>
-    </nav>
-<div class="container">
 
-  {{ content }}
 
-</div>
+    {% include header.html %}
 
-  <footer>
-   <ul>
-   <li><a href="mailto:contact@vineethaparuchuri.com">email</a></li>
-   <li><a href="https://twitter.com/pvineetha">Twitter</a></li>
-   </ul>
-  </footer>
-  </body>
 
+    {{ content }}
+
+
+
+
+
+
+
+
+
+    {% include footer.html %}
+
+    </body>
 </html>
